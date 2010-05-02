@@ -2,7 +2,11 @@
 #include "CLRConfig.h"
 
 #if LINK_TO_MOGRE
-#pragma comment(lib, "Mogre.lib")
+	#ifdef _DEBUG
+		#pragma comment(lib, "Mogre_d.lib")
+	#else
+		#pragma comment(lib, "Mogre.lib")
+	#endif
 
 namespace Mogre {
 #define CLROBJECT(T) \

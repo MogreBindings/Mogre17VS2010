@@ -20,7 +20,7 @@ namespace AutoWrap
             MetaDefinition meta = new MetaDefinition(@"..\..\..\cpp2java\build\meta.xml", "Mogre");
             meta.AddAttributes(@"..\..\Attributes.xml");
 
-            Wrapper wrapper = new Wrapper(meta, @"..\..\..\Mogre\include\auto", @"..\..\..\Mogre\src\auto", "Mogre", "Ogre");
+            Wrapper wrapper = new Wrapper(meta, @"..\..\..\..\Main\include\auto", @"..\..\..\..\Main\src\auto", "Mogre", "Ogre");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

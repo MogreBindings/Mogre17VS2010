@@ -81,8 +81,8 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = "../ogre/OgreMain/include" \
-			"../ogre/OgreMain/include/WIN32"
+INPUT                  = "../../Main/OgreSrc/ogre/OgreMain/include" \
+			"../../Main/OgreSrc/ogre/OgreMain/include/WIN32"
 FILE_PATTERNS          = *.h
 RECURSIVE              = NO
 EXCLUDE                = 
