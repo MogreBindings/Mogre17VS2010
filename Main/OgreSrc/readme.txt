@@ -1,0 +1,1 @@
+- put here the ogre source repository clone (use hg clone http://bitbucket.org/sinbad/ogre/ -u v1-7)
