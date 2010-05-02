@@ -1,0 +1,19 @@
+/Makefile.am/1.6/Sun Dec 31 23:31:15 2006//Tv1_2
+/OIS.h/1.4/Tue Jan  2 06:24:30 2007//Tv1_2
+/OISConfig.h/1.12/Wed Jan 24 23:49:18 2007//Tv1_2
+/OISEffect.h/1.22/Thu Jan  4 19:37:44 2007//Tv1_2
+/OISEvents.h/1.10/Sun Dec 31 23:31:15 2006//Tv1_2
+/OISException.h/1.10/Sat Nov 17 21:44:28 2007//Tv1_2
+/OISFactoryCreator.h/1.5/Thu Jan  4 23:24:15 2007//Tv1_2
+/OISForceFeedback.h/1.11/Sun Dec 31 23:31:15 2006//Tv1_2
+/OISInputManager.h/1.16/Sun Sep 23 03:53:01 2007//Tv1_2
+/OISInterface.h/1.7/Sun Dec 31 23:31:15 2006//Tv1_2
+/OISJoyStick.h/1.23.2.1/Tue May  6 01:41:16 2008//Tv1_2
+/OISKeyboard.h/1.17.2.1/Tue May  6 01:41:16 2008//Tv1_2
+/OISMouse.h/1.13.2.1/Tue May  6 01:41:16 2008//Tv1_2
+/OISObject.h/1.8.2.1/Tue May  6 01:41:16 2008//Tv1_2
+/OISPrereqs.h/1.38.2.2/Thu Feb 14 03:33:36 2008//Tv1_2
+D/SDL////
+D/linux////
+D/mac////
+D/win32////

@@ -1,0 +1,13 @@
+/Makefile.am////*///
+/OISEffect.cpp////*///
+/OISException.cpp////*///
+/OISForceFeedback.cpp////*///
+/OISInputManager.cpp////*///
+/OISJoyStick.cpp////*///
+/OISKeyboard.cpp////*///
+/OISObject.cpp////*///
+D/SDL///////
+D/extras///////
+D/linux///////
+D/mac///////
+D/win32///////

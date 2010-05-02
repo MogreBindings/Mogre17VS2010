@@ -1,0 +1,24 @@
+syntax: glob
+
+*~
+*.orig
+*.rej
+*.swp
+.#*
+*.obj
+*.o
+*.a
+*.ncb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.manifest
+*.pdb
+*.idb
+*.rsp
+*.pch
+*.dep
+*.so
+*.dylib
+*.framework

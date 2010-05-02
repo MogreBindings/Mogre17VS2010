@@ -1,0 +1,13 @@
+/OISWiiMote.cpp////*///
+/OISWiiMote.h////*///
+/OISWiiMoteFactoryCreator.cpp////*///
+/OISWiiMoteFactoryCreator.h////*///
+/OISWiiMoteForceFeedback.cpp////*///
+/OISWiiMoteForceFeedback.h////*///
+/OISWiiMoteRingBuffer.cpp////*///
+/OISWiiMoteRingBuffer.h////*///
+/hiddevice.cpp////*///
+/hiddevice.h////*///
+/main.cpp////*///
+/wiimote.cpp////*///
+/wiimote.h////*///

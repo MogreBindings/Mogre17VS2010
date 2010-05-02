@@ -1,0 +1,8 @@
+/Makefile.am////*///
+/OISEffect.cpp////*///
+/OISException.cpp////*///
+/OISForceFeedback.cpp////*///
+/OISInputManager.cpp////*///
+/OISJoyStick.cpp////*///
+/OISKeyboard.cpp////*///
+/OISObject.cpp////*///
