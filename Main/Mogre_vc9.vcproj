@@ -18,7 +18,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="..\Ogre\lib"
+			OutputDirectory="lib\$(ConfigurationName)"
 			IntermediateDirectory="obj\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="2"
@@ -95,7 +95,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="..\Ogre\lib"
+			OutputDirectory="lib\$(ConfigurationName)"
 			IntermediateDirectory="obj\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="2"
@@ -165,7 +165,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy $(OutDir)\$(TargetFileName) ..\Ogre\Samples\Common\bin\$(ConfigurationName)"
+				CommandLine=""
 			/>
 		</Configuration>
 	</Configurations>
@@ -1021,11 +1021,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\include\Custom\MogreColourValue.h"
+				RelativePath=".\include\auto\MogreColourValue.h"
 				>
 			</File>
 			<File
-				RelativePath=".\include\auto\MogreColourValue.h"
+				RelativePath=".\include\Custom\MogreColourValue.h"
 				>
 			</File>
 			<File
@@ -1357,11 +1357,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\include\Custom\MogrePlane.h"
+				RelativePath=".\include\auto\MogrePlane.h"
 				>
 			</File>
 			<File
-				RelativePath=".\include\auto\MogrePlane.h"
+				RelativePath=".\include\Custom\MogrePlane.h"
 				>
 			</File>
 			<File
