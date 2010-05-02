@@ -47,6 +47,12 @@ namespace Mogre
         {
             return Quaternion::IDENTITY;
         }
+		
+		// sometimes the dot product yields -1.0000001
+		// floating point math does that to you
+		if (d < -1.0f)
+			d = -1.0f;
+
         Real s = Math::Sqrt( (1+d)*2 );
 		if (s < 1e-6f)
 		{
