@@ -22,3 +22,6 @@ syntax: glob
 *.so
 *.dylib
 *.framework
+*.sdf
+*.suo
+*.vcxproj.user
