@@ -34,3 +34,5 @@ glob:Main/obj
 glob:Main/OgreSrc/Dependencies
 glob:Main/src/auto
 glob:*.opensdf
+glob:Main/OgreSrc/build
+glob:*.exp
