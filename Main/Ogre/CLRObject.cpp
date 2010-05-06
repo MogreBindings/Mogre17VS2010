@@ -1,3 +1,4 @@
+#include "OgreStableHeaders.h"
 #include "CLRObject.h"
 #include "CLRConfig.h"
 
