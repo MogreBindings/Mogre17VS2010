@@ -62,7 +62,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>OgreSrc\build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>OgreSrc\build\lib\Debug;$(BOOST_LIBRARY_DIRECTORY);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AssemblyDebug>true</AssemblyDebug>
       <TargetMachine>MachineX86</TargetMachine>
@@ -75,7 +75,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/MP3 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>include;include\auto;OgreSrc\ogre\OgreMain\include;OgreSrc\ogre;OgreSrc\build\include;$(BOOST_INCLUDE_DIRECTORY);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;include\auto;OgreSrc\ogre\OgreMain\include;OgreSrc\ogre\include;OgreSrc\build\include;$(BOOST_INCLUDE_DIRECTORY);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>

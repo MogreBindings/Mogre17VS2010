@@ -87,7 +87,6 @@ public:																				\
 		property M Value															\
 		{																			\
 			M get();																\
-			void set(M value);														\
 		}																			\
 																					\
 		virtual bool Equals(Object^ obj) override									\
@@ -581,10 +580,6 @@ internal:																			\
 		M PREFIX##CLASS_NAME::Iterator::Value::get()										\
 			{																		\
 				return ToManaged<M,N>( *(*_native) );								\
-			}																		\
-		void PREFIX##CLASS_NAME::Iterator::Value::set(M value)								\
-			{																		\
-				*(*_native) = ToNative<M,N>( value );								\
 			}																		\
 																					\
 	PREFIX##Const_##CLASS_NAME^ PREFIX##CLASS_NAME::ReadOnlyInstance::get()							\
