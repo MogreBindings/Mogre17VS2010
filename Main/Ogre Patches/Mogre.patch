@@ -2400,16 +2400,15 @@ Index: OgreMain/src/OgreException.cpp
      }
  
  }
-Index: OgreMain/src/OgreException.cpp
+Index: OgreMain/CMakeLists.txt
 ===================================================================
 --- OgreMain/CMakeLists.txt	(revision 9952)
 +++ OgreMain/CMakeLists.txt	(working copy)
-@@ -642,6 +642,17 @@
+@@ -642,6 +642,16 @@
    list(APPEND LIBRARIES "${ZLIB_LIBRARIES}")
  endif ()
  
 +# Added by Mogre
-+include_directories("../../../include/auto")
 +include_directories("../../../Ogre")
 +list(APPEND HEADER_FILES
 +  ../../../Ogre/CLRConfig.h
@@ -2421,4 +2420,4 @@ Index: OgreMain/src/OgreException.cpp
 +
  # setup OgreMain target
  add_library(OgreMain ${OGRE_LIB_TYPE} ${PREC_HEADER} ${HEADER_FILES} ${SOURCE_FILES} ${PLATFORM_HEADER_FILES} ${PLATFORM_SOURCE_FILES} ${THREAD_HEADER_FILES} ${THREAD_SOURCE_FILES})
- set_target_properties(OgreMain PROPERTIES VERSION ${OGRE_SOVERSION}) 
+ set_target_properties(OgreMain PROPERTIES VERSION ${OGRE_SOVERSION})

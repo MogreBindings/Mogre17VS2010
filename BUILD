@@ -19,6 +19,7 @@ Please verify this!
 - execute Codegen/cpp2java/build.bat (from within Codegen/cpp2java)
 - Compile AutoWrap (Codegen/AutoWrap/AutoWrap.sln or ...AutoWrap_vs2010.sln)
 - Run AutoWrap and click "Generate".
+- copy Main/include/auto/CLRObjects.inc to Main/OgreSrc/ogre/OgreMain/include
 - Compile Ogre. If you get the error "missing mogre.lib",
   make sure that in CLRConfig.h it is "#define LINK_TO_MOGRE 0"
 - Compile Mogre (either Main/Mogre_vc9.sln or Main/Mogre_vs2010.sln)
