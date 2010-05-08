@@ -36,3 +36,7 @@ glob:Main/src/auto
 glob:*.opensdf
 glob:Main/OgreSrc/build
 glob:*.exp
+glob:Debug
+glob:Release
+glob:*.tlog
+glob:Addons/MOIS/ois/lib/obj
