@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Fresnel", "Samples\Fre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.MogreForm", "Samples\MogreForm\Demo.MogreForm.csproj", "{18FB9BEC-359F-426D-9B2B-C554AF60F00D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.SkeletaAnimation", "Samples\SkeletalAnimation\Demo.SkeletaAnimation.csproj", "{422F535D-E2FE-4A2A-BF31-70899DF08AFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.SkeletalAnimation", "Samples\SkeletalAnimation\Demo.SkeletalAnimation.csproj", "{422F535D-E2FE-4A2A-BF31-70899DF08AFE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Transparency", "Samples\Transparency\Demo.Transparency.csproj", "{BD3C2EE9-6171-4511-943C-EF6C4F9283C1}"
 EndProject
