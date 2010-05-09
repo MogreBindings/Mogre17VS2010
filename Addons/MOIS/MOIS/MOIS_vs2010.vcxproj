@@ -150,6 +150,11 @@
     <ClInclude Include="include\STLVector.h" />
     <ClInclude Include="include\Wrapper.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ois\Win32\OIS_vs2010.vcxproj">
+      <Project>{9cc704cb-4956-4479-bdec-57cbc03f700e}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

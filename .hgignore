@@ -40,3 +40,4 @@ glob:Debug
 glob:Release
 glob:*.tlog
 glob:Addons/MOIS/ois/lib/obj
+regexp:^Samples$

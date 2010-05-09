@@ -14,16 +14,12 @@ Please verify this!
   OGRE_CONFIG_ENABLE_PVRTC switched ON and 
   OGRE_CONFIG_CONTAINERS_USE_CUSTOM_ALLOCATOR switched OFF. Target
   Main/OgreSrc/build as output directory.
-- execute Main/Ogre/copy_to_ogre.bat (from within Main/Ogre/ directory)
-  This will just copy some h and cpp files into Ogre directory
 - execute Codegen/cpp2java/build.bat (from within Codegen/cpp2java)
 - Compile AutoWrap (Codegen/AutoWrap/AutoWrap.sln or ...AutoWrap_vs2010.sln)
 - Run AutoWrap and click "Generate".
-- copy Main/include/auto/CLRObjects.inc to Main/OgreSrc/ogre/OgreMain/include
 - Compile Ogre. If you get the error "missing mogre.lib",
   make sure that in CLRConfig.h it is "#define LINK_TO_MOGRE 0"
 - Compile Mogre (either Main/Mogre_vc9.sln or Main/Mogre_vs2010.sln)
 - Change in Main/OgreSrc/ogre/OgreMain/include/CLRConfig.h the define
   to "#define LINK_TO_MOGRE 1"
 - Compile Ogre again (no need for a full rebuild)
-- Compile Mogre again

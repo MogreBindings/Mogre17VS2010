@@ -4,7 +4,7 @@
 
 
 
-#ifdef LINK_TO_MOGRE
+#if LINK_TO_MOGRE
 #ifdef _DEBUG
 #pragma comment(lib, "../../../lib/Debug/mogre_d.lib")
 #else
