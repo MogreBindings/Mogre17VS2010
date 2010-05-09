@@ -43,7 +43,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP3"
 				Optimization="0"
-				AdditionalIncludeDirectories="include;include\auto;OgreSrc\Ogre\OgreMain\include;OgreSrc\Ogre;OgreSrc\build\include;&quot;C:\Program Files (x86)\boost\boost_1_40&quot;"
+				AdditionalIncludeDirectories="include;include\auto;OgreSrc\Ogre\OgreMain\include;OgreSrc\Ogre;OgreSrc\build\include;&quot;C:\Program Files (x86)\boost\boost_1_40&quot;Ogre"
 				PreprocessorDefinitions="WIN32;_DEBUG"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="2"
@@ -120,7 +120,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP3"
-				AdditionalIncludeDirectories="include;include\auto;OgreSrc\Ogre\OgreMain\include;OgreSrc\Ogre;OgreSrc\build\include;&quot;C:\Program Files (x86)\boost\boost_1_40&quot;"
+				AdditionalIncludeDirectories="include;include\auto;OgreSrc\Ogre\OgreMain\include;OgreSrc\Ogre;OgreSrc\build\include;&quot;C:\Program Files (x86)\boost\boost_1_40&quot;Ogre"
 				PreprocessorDefinitions="WIN32;NDEBUG"
 				RuntimeLibrary="2"
 				UsePrecompiledHeader="2"
