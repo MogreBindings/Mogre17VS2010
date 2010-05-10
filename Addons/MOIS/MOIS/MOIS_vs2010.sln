@@ -5,7 +5,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MOIS", "MOIS_vs2010.vcxproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "..\ConsoleTest\ConsoleTest_vs2010.csproj", "{2739FD59-0B85-4F2F-8840-8A14C1D422D0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OIS", "..\ois\Win32\OIS_vs2010.vcproj", "{9CC704CB-4956-4479-BDEC-57CBC03F700E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OIS", "..\ois\Win32\OIS_vs2010.vcxproj", "{9CC704CB-4956-4479-BDEC-57CBC03F700E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

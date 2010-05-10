@@ -2,7 +2,18 @@ Index: CMakeLists.txt
 ===================================================================
 --- CMakeLists.txt	(revision 9952)
 +++ CMakeLists.txt	(working copy)
-@@ -103,6 +103,9 @@
+@@ -14,6 +14,10 @@
+ # and provide build configuration options.
+ ######################################################################
+ 
++# Added by Mogre
++include_directories("../../Ogre")
++include_directories("../../include/auto")
++
+ cmake_minimum_required(VERSION 2.6)
+ set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS TRUE)
+ cmake_policy(SET CMP0003 NEW)
+@@ -103,6 +106,9 @@
  	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /bigobj")
  	set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} /bigobj")
    endif ()
