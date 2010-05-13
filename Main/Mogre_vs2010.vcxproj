@@ -61,7 +61,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>OgreSrc\lib\lib\Debug;$(BOOST_LIBRARY_DIRECTORY);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>OgreSrc\ogre\lib\lib\Debug;$(BOOST_LIBRARY_DIRECTORY);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AssemblyDebug>true</AssemblyDebug>
       <TargetMachine>MachineX86</TargetMachine>
@@ -84,7 +84,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>OgreSrc\lib\lib\Release;$(BOOST_LIBRARY_DIRECTORY);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>OgreSrc\ogre\lib\lib\Release;$(BOOST_LIBRARY_DIRECTORY);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
