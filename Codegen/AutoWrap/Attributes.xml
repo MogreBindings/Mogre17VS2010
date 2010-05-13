@@ -207,9 +207,9 @@ public:
     <class name="ScriptLoader" Ignore=""/>
     <class name="DefaultHardwareVertexBuffer" Ignore=""/>
     <class name="DefaultHardwareIndexBuffer" Ignore=""/>
-    <class name="DefaultHardwareBufferManager" Ignore=""/>
+    <!--class name="DefaultHardwareBufferManager" Ignore=""/-->
     <!--class name="HardwareBufferManagerBase" Ignore="" /-->
-    <class name="DefaultHardwareBufferManagerBase" Ignore="" />
+    <!--class name="DefaultHardwareBufferManagerBase" Ignore="" /-->
     <class name="ControllerManager" Ignore=""/>
     <class name="ControllerValueRealPtr" Ignore=""/>
     <class name="ControllerFunctionRealPtr" Ignore=""/>
