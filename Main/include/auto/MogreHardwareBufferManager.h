@@ -89,13 +89,35 @@ namespace Mogre
 	{
 		//Nested Types
 	
+		
+		        private protected:
+		            static HardwareBufferManager^ _singleton;
+		        public:
+				static property HardwareBufferManager^ Singleton
+				{
+					HardwareBufferManager^ get()
+					{
+						Ogre::HardwareBufferManager* ptr = Ogre::HardwareBufferManager::getSingletonPtr();
+						if (_singleton == CLR_NULL || _singleton->_native != ptr)
+						{
+							if (_singleton != CLR_NULL)
+							{
+								_singleton->_native = 0;
+								_singleton = nullptr;
+							}
+							if ( ptr ) _singleton = gcnew HardwareBufferManager( ptr );
+						}
+						return _singleton;
+					}
+				}            
+		      
+	
 		//Private Declarations
 	private protected:
-		static HardwareBufferManager^ _singleton;
 	
 		//Internal Declarations
 	public protected:
-		HardwareBufferManager( Ogre::HardwareBufferManager* obj ) : HardwareBufferManagerBase(obj)
+		HardwareBufferManager( CLRObject* obj ) : HardwareBufferManagerBase(obj)
 		{
 		}
 	
@@ -103,23 +125,6 @@ namespace Mogre
 		//Public Declarations
 	public:
 	
-		static property HardwareBufferManager^ Singleton
-		{
-			HardwareBufferManager^ get()
-			{
-				Ogre::HardwareBufferManager* ptr = Ogre::HardwareBufferManager::getSingletonPtr();
-				if (_singleton == CLR_NULL || _singleton->_native != ptr)
-				{
-					if (_singleton != CLR_NULL)
-					{
-						_singleton->_native = 0;
-						_singleton = nullptr;
-					}
-					if ( ptr ) _singleton = gcnew HardwareBufferManager( ptr );
-				}
-				return _singleton;
-			}
-		}
 	
 		void _Init_CLRObject( );
 	
@@ -154,6 +159,7 @@ namespace Mogre
 	
 		void _notifyIndexBufferDestroyed( Mogre::HardwareIndexBuffer^ buf );
 	
+		DEFINE_MANAGED_NATIVE_CONVERSIONS( HardwareBufferManager )
 	
 		//Protected Declarations
 	protected public:

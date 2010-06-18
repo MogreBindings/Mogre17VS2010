@@ -344,6 +344,28 @@ public:
     <class name="HardwareBufferManager">
       <function name="_forceReleaseBufferCopies" Ignore=""/>
       <function name="HardwareBufferManager" Ignore=""/>
+      <_CustomIncDeclaration>
+        private protected:
+            static HardwareBufferManager^ _singleton;
+        public:
+		static property HardwareBufferManager^ Singleton
+		{
+			HardwareBufferManager^ get()
+			{
+				Ogre::HardwareBufferManager* ptr = Ogre::HardwareBufferManager::getSingletonPtr();
+				if (_singleton == CLR_NULL || _singleton->_native != ptr)
+				{
+					if (_singleton != CLR_NULL)
+					{
+						_singleton->_native = 0;
+						_singleton = nullptr;
+					}
+					if ( ptr ) _singleton = gcnew HardwareBufferManager( ptr );
+				}
+				return _singleton;
+			}
+		}            
+      </_CustomIncDeclaration>
     </class>
     <class name="CompositorInstance">
       <class name="RenderSystemOperation" Ignore=""/>

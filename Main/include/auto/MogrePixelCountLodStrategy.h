@@ -21,11 +21,10 @@ namespace Mogre
 	
 		//Private Declarations
 	private protected:
-		static PixelCountLodStrategy^ _singleton;
 	
 		//Internal Declarations
 	public protected:
-		PixelCountLodStrategy( Ogre::PixelCountLodStrategy* obj ) : LodStrategy(obj)
+		PixelCountLodStrategy( CLRObject* obj ) : LodStrategy(obj)
 		{
 		}
 	
@@ -34,23 +33,6 @@ namespace Mogre
 	public:
 		PixelCountLodStrategy( );
 	
-		static property PixelCountLodStrategy^ Singleton
-		{
-			PixelCountLodStrategy^ get()
-			{
-				Ogre::PixelCountLodStrategy* ptr = Ogre::PixelCountLodStrategy::getSingletonPtr();
-				if (_singleton == CLR_NULL || _singleton->_native != ptr)
-				{
-					if (_singleton != CLR_NULL)
-					{
-						_singleton->_native = 0;
-						_singleton = nullptr;
-					}
-					if ( ptr ) _singleton = gcnew PixelCountLodStrategy( ptr );
-				}
-				return _singleton;
-			}
-		}
 	
 		property Mogre::Real BaseValue
 		{
@@ -70,6 +52,7 @@ namespace Mogre
 	
 		bool IsSorted( Mogre::Mesh::Const_LodValueList^ values );
 	
+		DEFINE_MANAGED_NATIVE_CONVERSIONS( PixelCountLodStrategy )
 	
 		//Protected Declarations
 	protected public:
