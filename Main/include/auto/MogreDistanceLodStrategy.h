@@ -21,10 +21,11 @@ namespace Mogre
 	
 		//Private Declarations
 	private protected:
+		static DistanceLodStrategy^ _singleton;
 	
 		//Internal Declarations
 	public protected:
-		DistanceLodStrategy( CLRObject* obj ) : LodStrategy(obj)
+		DistanceLodStrategy( Ogre::DistanceLodStrategy* obj ) : LodStrategy(obj)
 		{
 		}
 	
@@ -33,6 +34,23 @@ namespace Mogre
 	public:
 		DistanceLodStrategy( );
 	
+		static property DistanceLodStrategy^ Singleton
+		{
+			DistanceLodStrategy^ get()
+			{
+				Ogre::DistanceLodStrategy* ptr = Ogre::DistanceLodStrategy::getSingletonPtr();
+				if (_singleton == CLR_NULL || _singleton->_native != ptr)
+				{
+					if (_singleton != CLR_NULL)
+					{
+						_singleton->_native = 0;
+						_singleton = nullptr;
+					}
+					if ( ptr ) _singleton = gcnew DistanceLodStrategy( ptr );
+				}
+				return _singleton;
+			}
+		}
 	
 		property Mogre::Real BaseValue
 		{
@@ -64,7 +82,6 @@ namespace Mogre
 	
 		void SetReferenceView( Mogre::Real viewportWidth, Mogre::Real viewportHeight, Mogre::Radian fovY );
 	
-		DEFINE_MANAGED_NATIVE_CONVERSIONS( DistanceLodStrategy )
 	
 		//Protected Declarations
 	protected public:

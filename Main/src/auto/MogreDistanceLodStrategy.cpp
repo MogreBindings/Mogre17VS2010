@@ -17,12 +17,10 @@ namespace Mogre
 	//Internal Declarations
 	
 	//Public Declarations
-	DistanceLodStrategy::DistanceLodStrategy( ) : LodStrategy((CLRObject*) 0)
+	DistanceLodStrategy::DistanceLodStrategy( ) : LodStrategy((Ogre::LodStrategy*) 0)
 	{
 		_createdByCLR = true;
 		_native = new Ogre::DistanceLodStrategy();
-	
-		_native->_MapToCLRObject(this, System::Runtime::InteropServices::GCHandleType::Normal);
 	}
 	
 	Mogre::Real DistanceLodStrategy::BaseValue::get()

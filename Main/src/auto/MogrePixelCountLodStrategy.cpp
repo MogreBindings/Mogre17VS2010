@@ -17,12 +17,10 @@ namespace Mogre
 	//Internal Declarations
 	
 	//Public Declarations
-	PixelCountLodStrategy::PixelCountLodStrategy( ) : LodStrategy((CLRObject*) 0)
+	PixelCountLodStrategy::PixelCountLodStrategy( ) : LodStrategy((Ogre::LodStrategy*) 0)
 	{
 		_createdByCLR = true;
 		_native = new Ogre::PixelCountLodStrategy();
-	
-		_native->_MapToCLRObject(this, System::Runtime::InteropServices::GCHandleType::Normal);
 	}
 	
 	Mogre::Real PixelCountLodStrategy::BaseValue::get()
