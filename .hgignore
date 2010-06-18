@@ -29,10 +29,8 @@ Codegen/AutoWrap/Backup
 Codegen/cpp2java/build
 *.cache
 glob:Codegen/AutoWrap/obj
-glob:Main/include/auto
 glob:Main/obj
 glob:Main/OgreSrc/Dependencies
-glob:Main/src/auto
 glob:*.opensdf
 glob:Main/OgreSrc/build
 glob:*.exp
