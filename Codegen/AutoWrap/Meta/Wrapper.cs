@@ -205,7 +205,6 @@ namespace AutoWrap.Meta
             else if (type is DefClass)
             {
                 DefClass cls = type as DefClass;
-
                 if (cls.HasAttribute<CLRObjectAttribute>(true))
                 {
                     if (cls.HasAttribute<OverridableAttribute>(true))
